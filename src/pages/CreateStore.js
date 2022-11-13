@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../css/CreateStore.module.css";
+import { Link } from 'react-router-dom';
+import NavBar from '../component/NavBar';
 
 function CreateStore(){
     return (
@@ -61,3 +63,5 @@ function CreateStore(){
             </section></body>
     )
                     }
+
+                    export default CreateStore;

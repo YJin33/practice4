@@ -19,17 +19,6 @@ height:130px;
 left:30px;
 }
 
-.up{
-position:relative;
-top:25px;
-right:22px;
-}
-
-.down{
-position:relative;
-top:30px;
-right:22px;
-}
 
 #table {
 display:table;

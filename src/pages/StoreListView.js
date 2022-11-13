@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../component/header";
-import "../css/Header.css";
 import NavBar from "../component/NavBar";
-import "../css/StoreListView.css";
 import { Link } from 'react-router-dom';
 
 class StoreListView extends React.Component {

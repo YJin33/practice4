@@ -1,7 +1,7 @@
 import React from "react";
-import "./CreateReview.css";
+import styles from "../css/CreateReview.module.css";
 
-function ReviewCreate(){
+function CreateReview(){
     return(
         <body>
             <aside>

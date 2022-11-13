@@ -1,7 +1,7 @@
 import React from "react";
-import "./CreateStore.css";
+import styles from "../css/CreateStore.module.css";
 
-function StoreCreate(){
+function CreateStore(){
     return (
         <body><aside>
             <div class="asideleft">

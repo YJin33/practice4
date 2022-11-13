@@ -1,7 +1,7 @@
 import React from "react";
-import "./CreateReview.css";
+import styles from "../css/CreateMenu.module.css";
 
-function MenuCreate(){
+function CreateMenu(){
     return (
         <body>
             <aside>

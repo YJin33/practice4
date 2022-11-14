@@ -1,4 +1,9 @@
-.StoreListView-Restaurant-table {
+.TopBar {
+
+    float: left;
+}
+
+table.Restaurant {
     background-color: white;
     float: left;
     width: 50%;
@@ -7,13 +12,26 @@
     color: black;
 }
 
-.StoreListView-Restaurant-table-ImagePart {
+.StoreName {
+    font-size: large;
+}
+
+.LocationImage {
+    width: 5%;
+
+}
+
+.StarImage {
+    width: 5%;
+}
+
+table.Restaurant-ImagePart {
     float: left;
     width: 25%;
     margin: 0;
 }
 
-.StoreListView-Restaurant-Tag {
+.Restaurant-Tag {
     float: right;
     display: inline;
     width: 63px;
@@ -24,13 +42,13 @@
     font-size: 10px;
 }
 
-.StoreListView-Restaurant-img {
+.Restaurant-img {
     width: 345.45px;
     height: 123.06px;
     left: 83px;
 }
 
-.StoreListView-Restaurant-StoreName {
+.Restaurant-StoreName {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;

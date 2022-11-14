@@ -5,6 +5,7 @@ import styles from "../css/StoreListView.module.css";
 import { Link } from 'react-router-dom';
 import SampleImg from "../img/sample.PNG";
 import locationImg from "../img/location.png"
+import starImg from "../img/starone.jpg";
 
 class StoreListView extends React.Component {
     render() {
@@ -29,25 +30,27 @@ class StoreListView extends React.Component {
                                 <option value="SortByPrice">가격 낮은 순</option>
                             </select>
                         </span>
-                    </div>
+                    </div><br></br>
                     < div className={styles.Restaurant}>
                         <div className={styles.Restaurant1}>
                             <table>
                                 <tr>
                                     <th className="ImagePart">
-                                        <img src={SampleImg} alt="restaurant1_img" />
+                                        <img className={styles.RestaurantImg} src={SampleImg} alt="restaurant1_img" />
                                     </th>
                                     <th>
-                                        <p className="StoreName">음식점 이름</p>
+                                        <p className={styles.StoreName}>음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src={locationImg} alt="locationImg" />
-                                        <p>음식점 주소</p>
+                                        <img className={styles.LocationImage} src={locationImg} alt="locationImg" />
+                                        <span>음식점 주소</span>
                                         {/* store 데이터 가져와서 수정*/}
                                         <p className="Tag">태그</p>
                                         {/*store 데이터 가져와서 수정*/}
                                         <img src="" alt="좋아요 수" />
+                                        <span>280</span><br></br>
                                         {/*<Heart></Heart> */}
-                                        <img src="" alt="평점" />
+                                        <img className={styles.StarImage} src={starImg} alt="평점" />
+                                        <span>3.8</span>
                                         {/*<StoreScore></StoreScore> */}
                                         <span>리뷰""개</span>
                                     </th>
@@ -59,20 +62,22 @@ class StoreListView extends React.Component {
                             <table>
                                 <tr>
                                     <th>
-                                        <img src={SampleImg} alt="restaurant2_img" />
+                                        <img className={styles.RestaurantImg} src={SampleImg} alt="restaurant2_img" />
                                     </th>
                                     <th>
-                                        <p className="StoreName">음식점 이름</p>
+                                        <p className={styles.StoreName}>음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src={locationImg} alt="locationImg" />
-                                        <p>음식점 주소</p>
+                                        <img className={styles.LocationImage} src={locationImg} alt="locationImg" />
+                                        <span>음식점 주소</span>
                                         {/* store 데이터 가져와서 수정*/}
-                                        <p className="Tag">태그</p>
+                                        <div className="Tag">태그</div>
                                         {/*store 데이터 가져와서 수정*/}
                                         <img src="" alt="좋아요 수" />
+                                        <span>280</span><br></br>
                                         {/*<Heart></Heart> */}
-                                        <img src="" alt="평점" />
+                                        <img className={styles.StarImage} src={starImg} alt="평점" />
                                         {/*<StoreScore></StoreScore> */}
+                                        <span>3.8</span>
                                         <span>리뷰""개</span>
                                     </th>
                                 </tr>
@@ -83,19 +88,21 @@ class StoreListView extends React.Component {
                             <table>
                                 <tr>
                                     <th>
-                                        <img src={SampleImg} alt="restaurant3_img" />
+                                        <img className={styles.RestaurantImg} src={SampleImg} alt="restaurant3_img" />
                                     </th>
                                     <th>
-                                        <p className="StoreName">음식점 이름</p>
+                                        <p className={styles.StoreName}>음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src={locationImg} alt="locationImg" />
-                                        <p>음식점 주소</p>
+                                        <img className={styles.LocationImage} src={locationImg} alt="locationImg" />
+                                        <span>음식점 주소</span><br></br>
                                         {/* store 데이터 가져와서 수정*/}
-                                        <p className="Tag">태그</p>
+                                        <span className="Tag">태그</span>
                                         {/*store 데이터 가져와서 수정*/}
                                         <img src="" alt="좋아요 수" />
+                                        <span>280</span><br></br>
                                         {/*<Heart></Heart> */}
-                                        <img src="" alt="평점" />
+                                        <img className={styles.StarImage} src={starImg} alt="평점" />
+                                        <span>3.8</span>
                                         {/*<StoreScore></StoreScore> */}
                                         <span>리뷰""개</span>
                                     </th>

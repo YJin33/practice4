@@ -3,6 +3,8 @@ import Header from "../component/header";
 import NavBar from "../component/NavBar";
 import styles from "../css/StoreListView.module.css";
 import { Link } from 'react-router-dom';
+import SampleImg from "../img/sample.PNG";
+import locationImg from "../img/location.png"
 
 class StoreListView extends React.Component {
     render() {
@@ -33,12 +35,12 @@ class StoreListView extends React.Component {
                             <table>
                                 <tr>
                                     <th className="ImagePart">
-                                        <img src="" alt="restaurant1_img" />
+                                        <img src={SampleImg} alt="restaurant1_img" />
                                     </th>
                                     <th>
                                         <p className="StoreName">음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src=".../img/location.png" alt="locationImg" />
+                                        <img src={locationImg} alt="locationImg" />
                                         <p>음식점 주소</p>
                                         {/* store 데이터 가져와서 수정*/}
                                         <p className="Tag">태그</p>
@@ -57,12 +59,12 @@ class StoreListView extends React.Component {
                             <table>
                                 <tr>
                                     <th>
-                                        <img src="" alt="restaurant2_img" />
+                                        <img src={SampleImg} alt="restaurant2_img" />
                                     </th>
                                     <th>
                                         <p className="StoreName">음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src=".../img/location.png" alt="locationImg" />
+                                        <img src={locationImg} alt="locationImg" />
                                         <p>음식점 주소</p>
                                         {/* store 데이터 가져와서 수정*/}
                                         <p className="Tag">태그</p>
@@ -81,12 +83,12 @@ class StoreListView extends React.Component {
                             <table>
                                 <tr>
                                     <th>
-                                        <img src="" alt="restaurant3_img" />
+                                        <img src={SampleImg} alt="restaurant3_img" />
                                     </th>
                                     <th>
                                         <p className="StoreName">음식점 이름</p>
                                         {/*store 데이터 가져와서 바꿀 것*/}
-                                        <img src=".../img/location.png" alt="locationImg" />
+                                        <img src={locationImg} alt="locationImg" />
                                         <p>음식점 주소</p>
                                         {/* store 데이터 가져와서 수정*/}
                                         <p className="Tag">태그</p>

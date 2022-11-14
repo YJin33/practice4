@@ -7,25 +7,42 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/result", methods=['POST', 'GET'])
+@app.route("/CreateStore", methods=['POST'])
 def Store_result():
     if request.method == 'POST':
         result = request.form
-        name=request.form['storename']
-        location=request.form['location']
+        name=result['storename']
+        location=result['location']
         # time
-        phonenumber=request.form['phonenumber']
-        category = request.form['food']
+        phonenumber=result['phonenumber']
+        category = result['food']
         #주차장
         #가격대
-        site = request.form['site']
+        site = result['site']
         print(name, location, phonenumber, category,site)
+
+        img_file = request.files['file']
+        img_file.save("./flask-server/static/img/"+ img_file.filename)
+        print(img_file)
+
+        return render_template("result.html", result=result)
+
+'''
+@app.route("/CreateMenu", methods=['POST'])
+def Menu_result():
+    if request.method == 'POST':
+        name=request.form['menuname']
+        price=request.form['price']
+        nutrient=request.form['nutrient']
+        print(name, price, nutrient)
 
         img_file = request.files['file']
         img_file.save("./flask-server/static/img/"+img_file.filename)
         print(img_file)
 
-        return render_template("result.html", result=result)
+        return render_template("index.html")
+'''
+
 
 
 if __name__ == "__main__":

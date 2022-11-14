@@ -7,8 +7,7 @@ function CreateReview(){
         <body>
             <aside>
                 <div class = "asideleft">
-                <Link to = "/CreateStore" class={styles.up}>기본정보</Link>
-                <Link to = "/CreateMenu" class={styles.down}>메뉴</Link>
+                    {/* 으악 잘못 날렸어요*/}
                 </div>
             </aside>
             <section>

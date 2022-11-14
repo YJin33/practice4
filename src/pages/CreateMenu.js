@@ -7,58 +7,48 @@ function CreateMenu(){
         <body>
             <aside>
                 <div class = "asideleft">
-                <div class = "up">기본정보</div>
-                <div class = "down">메뉴</div>
+                <Link to = "/CreateStore" class={styles.up}>기본정보</Link>
+                <Link to = "/CreateMenu" class={styles.down}>메뉴</Link>
                 </div>
             </aside>
             <section>
+              <form method="post" enctype="multipart/form-data">
                 <div id = "table">
-                    <div class = "row">
-                    <span class = "cell col1">돈카츠우동</span>
-                    <span class = "cell col2"><input type = 'button' value ="편집"/></span>
-                    </div>
-                    <div class = "row">
-                    <span class = "cell col1">가츠동(돈카츠덮밥)</span>
-                    <span class = "cell col2"><input type = 'button' value ="편집"/></span>
-                    </div>
-                    <div class = "row">
-                    <span class = "cell col1">김치나베돈카츠</span>
-                    <span class = "cell col2"></span>
-                    </div>
                     <div class = "row">
                     <span class = "cell col1"></span>
                     <span class = "cell col2">
                     <table>
                   <tr>
                     <th>메뉴명</th>
-                    <td><input type ="text" name = "food"/></td>
+                    <td><input type ="text" name = "menuname"/></td>
                   </tr>
                   <tr>
                     <th>가격</th>
-                    <td><input type ="text" name = "money"/></td>
+                    <td><input type ="text" name = "price"/></td>
                   </tr>
                   <tr>
                     <th rowspan = "2">영양성분</th>
-                    <td><input type ="site" name = "site" value = "+" size = "70"/></td>
+                    <td><input type ="text" name = "nutrient" value = "+" size = "70"/></td>
                   </tr>
                   <tr>
                     <td>-계란</td>
                     </tr>
                   <tr>
                     <th>대표사진</th>
-                    <td><input type = 'button' value ="파일 첨부 (.jpg , .png)"/></td>
+                    <td><input type="file" name="file" accept="image/*" /></td>
                   </tr>
                   <tr>
-                    <td><input type = 'button' value ="메뉴 정보 등록"/></td>
+                    <td><input type = 'submit' value ="메뉴 정보 등록"/></td>
                     </tr>
                   </table>
                         </span>
                     </div>
                     <div class = "row">
                     <span class = "cell col1"></span>
-                    <span class = "cell col2">+ 메뉴 새로 추가하기</span>
+                    <input class = "cell col2" type="button">+ 메뉴 새로 추가하기</input>
                     </div>
                 </div>
+              </form>
             </section>
         </body>
     )

@@ -1,6 +1,6 @@
 const { request } = require("express");
 const { User } = require("../models/User");
-const { User } = require("../models/User");
+
 
 let auth = (req, res, next) => {
     //인증처리하는 곳
@@ -18,4 +18,4 @@ let auth = (req, res, next) => {
     })
 
 }
-module.exports = { auth }
+module.exports = { auth };

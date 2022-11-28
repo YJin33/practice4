@@ -20,6 +20,9 @@ mongoose.connect(config.mongoURI, {
 }).then(() => console.log('MongoDB Connected...'))
     .catch(err => console.log(err))
 
+app.get('/api/hello', (req, res) => {
+    res.send("안녕하세요")
+})
 
 app.get('/', (req, res) => res.send('Hello World! 새해복 많이 받으세요'))
 // 회원가입을 위한 라우트
@@ -78,7 +81,7 @@ app.get('/api/Users/auth', auth, (req, res) => {
     })
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
 
 app.get('/api/Users/logout', auth, (res, req) => {
     User.findOneAndUpdate({ _id: req.user._id },
@@ -90,3 +93,5 @@ app.get('/api/Users/logout', auth, (res, req) => {
             })
         })
 })
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
